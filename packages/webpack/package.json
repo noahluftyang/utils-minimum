@@ -1,6 +1,6 @@
 {
   "name": "@codemakrbros/webpack",
-  "version": "0.0.1",
+  "version": "0.0.2-rc0",
   "description": "Webpack scripts and configurations.",
   "author": {
     "name": "noahluftyang",
