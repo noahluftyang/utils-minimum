@@ -1,10 +1,10 @@
 {
-  "name": "@codemakebros/tslint",
+  "name": "@codemakebros/tslint-config",
   "version": "0.0.2-rc0",
   "description": "Tslint configurations.",
   "author": "noahluftyang <ykd1217@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/tslint",
+  "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/tslint-config",
   "keywords": [
     "typescript",
     "tslint"

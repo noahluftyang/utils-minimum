@@ -1,10 +1,10 @@
 {
-  "name": "@codemakebros/eslint",
+  "name": "@codemakebros/eslint-config",
   "version": "0.0.2-rc0",
   "description": "Eslint configurations.",
   "author": "ykd1217 <ykd1217@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/eslint",
+  "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/eslint-config",
   "keywords": [
     "javascript",
     "eslint"

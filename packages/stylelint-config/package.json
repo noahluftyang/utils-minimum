@@ -1,10 +1,10 @@
 {
-  "name": "@codemakebros/stylelint",
+  "name": "@codemakebros/stylelint-config",
   "version": "0.0.2-rc0",
   "description": "Stylelint configurations.",
   "author": "ykd1217 <ykd1217@gmail.com>",
   "license": "MIT",
-  "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/stylelint",
+  "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/stylelint-config",
   "keywords": [
     "css",
     "scss",
