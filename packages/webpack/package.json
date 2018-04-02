@@ -1,0 +1,65 @@
+{
+  "name": "@codemakrbros/webpack",
+  "version": "0.0.0",
+  "description": "Webpack scripts and configurations.",
+  "author": {
+    "name": "noahluftyang",
+    "email": "ykd1217@gmail.com"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/webpack",
+  "keywords": [
+    "webpack"
+  ],
+  "engines": {
+    "node": ">= 8.9.4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "run-s lint:**",
+    "lint:js": "eslint .",
+    "prettier": "prettier --write '**/*.js'"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "compression-webpack-plugin": "^1.1.11",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^0.28.11",
+    "dotenv": "^5.0.1",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^2.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "fork-ts-checker-webpack-plugin": "^0.4.1",
+    "html-webpack-plugin": "^3.1.0",
+    "ora": "^2.0.0",
+    "postcss-loader": "^2.1.3",
+    "react-dev-utils": "^5.0.0",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.20.3",
+    "stylelint": "^9.2.0",
+    "stylelint-webpack-plugin": "^0.10.4",
+    "sw-precache-webpack-plugin": "^0.11.5",
+    "tslint": "^5.9.1",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.4.1",
+    "webpack-dev-server": "^3.1.1",
+    "webpack-merge": "^4.1.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "babel-loader": "8.0.0-beta.0",
+    "ts-loader": "^4.1.0",
+    "typescript": "^2.8.1"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0-beta.42",
+    "babel-loader": "^8.0.0-beta",
+    "ts-loader": "^4.1.0",
+    "typescript": "^2.8.1"
+  },
+  "bin": {
+    "cmb-webpack": "index.js"
+  }
+}

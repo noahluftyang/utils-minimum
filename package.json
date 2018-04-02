@@ -1,0 +1,29 @@
+{
+  "name": "utils-minimum",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Development utils for front-end application.",
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "css",
+    "scss",
+    "webpack",
+    "eslint",
+    "tslint",
+    "stylelint"
+  ],
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "postinstall": "lerna bootstrap",
+    "release": "lerna publish",
+    "prettier": "lerna run prettier"
+  },
+  "devDependencies": {
+    "lerna": "^2.9.1",
+    "prettier": "^1.11.1"
+  }
+}

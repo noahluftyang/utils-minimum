@@ -1,0 +1,27 @@
+{
+  "name": "@codemakrbros/tslint",
+  "version": "0.0.0",
+  "description": "Tslint configurations.",
+  "author": {
+    "name": "noahluftyang",
+    "email": "ykd1217@gmail.com"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/tslint",
+  "keywords": [
+    "typescript",
+    "tslint"
+  ],
+  "engines": {
+    "node": ">= 8.9.4"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1"
+  },
+  "peerDependencies": {
+    "tslint": "^5.9.1",
+    "typescript": "^2.8.1"
+  }
+}
