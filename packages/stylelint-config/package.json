@@ -15,13 +15,14 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "stylelint ."
   },
   "dependencies": {},
-  "devDependencies": {
-    "stylelint": "^9.2.0"
-  },
+  "devDependencies": {},
   "peerDependencies": {
-    "stylelint": "^9.2.0"
+    "stylelint": "^9.2.0",
+    "stylelint-no-unsupported-browser-features": "^2.0.0",
+    "stylelint-scss": "^3.0.0",
+    "stylelint-selector-bem-pattern": "^2.0.0"
   }
 }

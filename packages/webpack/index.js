@@ -5,6 +5,7 @@ const commander = require('commander');
 
 // Local import
 const packageJson = require('./package');
+const logger = require('./scripts/logger');
 
 let taskName;
 const program = new commander.Command('cmb-webpack')
