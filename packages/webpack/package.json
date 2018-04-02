@@ -1,11 +1,8 @@
 {
-  "name": "@codemakrbros/webpack",
+  "name": "@codemakebros/webpack",
   "version": "0.0.2-rc0",
   "description": "Webpack scripts and configurations.",
-  "author": {
-    "name": "noahluftyang",
-    "email": "ykd1217@gmail.com"
-  },
+  "author": "noahluftyang <ykd1217@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/webpack",
   "keywords": [

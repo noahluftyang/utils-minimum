@@ -1,11 +1,8 @@
 {
-  "name": "@codemakrbros/tslint",
+  "name": "@codemakebros/tslint",
   "version": "0.0.2-rc0",
   "description": "Tslint configurations.",
-  "author": {
-    "name": "noahluftyang",
-    "email": "ykd1217@gmail.com"
-  },
+  "author": "noahluftyang <ykd1217@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/tslint",
   "keywords": [
@@ -16,6 +13,10 @@
     "node": ">= 8.9.4"
   },
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {},
   "devDependencies": {
     "tslint": "^5.9.1",
     "typescript": "^2.8.1"
