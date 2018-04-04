@@ -18,29 +18,41 @@
     "packages/*"
   ],
   "scripts": {
-    "postinstall": "lerna bootstrap",
     "release": "lerna publish",
     "prettier": "lerna run prettier"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.42",
-    "@codemakebros/eslint-config": "^0.0.2-rc0",
+    "@angular/common": "^5.2.9",
+    "@angular/compiler": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "@angular/platform-browser": "^5.2.9",
+    "@angular/platform-browser-dynamic": "^5.2.9",
+    "@babel/core": "^7.0.0-beta.44",
+    "angular2-template-loader": "^0.6.2",
     "babel-loader": "8.0.0-beta.0",
+    "core-js": "^2.5.4",
     "eslint": "^4.19.1",
+    "eslint-plugin-angular": "^3.3.0",
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "lerna": "^2.9.1",
     "prettier": "^1.11.1",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "rxjs": "^5.5.8",
+    "styled-components": "^3.2.5",
     "stylelint": "^9.2.0",
-    "stylelint-no-unsupported-browser-features": "^2.0.0",
+    "stylelint-no-unsupported-browser-features": "^3.0.0",
     "stylelint-scss": "^3.0.0",
     "stylelint-selector-bem-pattern": "^2.0.0",
     "ts-loader": "^4.1.0",
     "tslint": "^5.9.1",
+    "tslint-angular": "^1.1.1",
     "tslint-eslint-rules": "^5.1.0",
     "tslint-microsoft-contrib": "^5.0.3",
     "tslint-react": "^3.5.1",
-    "typescript": "^2.8.1"
+    "typescript": "^2.8.1",
+    "zone.js": "^0.8.25"
   }
 }

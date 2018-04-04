@@ -16,26 +16,8 @@ const { packageJson, srcDir } = require('./config/path');
 module.exports = {
   module: {
     rules: [{
-      test: /\.js$/,
-      include: srcDir,
-      use: [
-        'source-map-loader',
-        'eslint-loader'
-      ],
-      enforce: 'pre'
-    }, {
-      test: /\.jsx?$/,
-      include: srcDir,
-      use: 'babel-loader'
-    }, {
-      test: /\.tsx?$/,
-      include: srcDir,
-      use: {
-        loader: 'ts-loader',
-        options: {
-          transpileOnly: true
-        }
-      }
+      test: /\.html$/,
+      loader: 'raw-loader'
     }, {
       test: /\.(jpg|png)$/,
       use: {
@@ -67,7 +49,7 @@ module.exports = {
       watch: srcDir
     }),
     new IgnorePlugin(/^\.\/locale$/, /moment$/),
+    // new InterpolateHtmlPlugin({ cdn, facebook, google }),
     new StyleLintPlugin()
-    // new InterpolateHtmlPlugin({ cdn, facebook, google })
   ]
 };
