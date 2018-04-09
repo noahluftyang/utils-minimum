@@ -1,6 +1,6 @@
 {
   "name": "@codemakebros/tslint-config",
-  "version": "0.0.2-rc1",
+  "version": "0.0.2-rc2",
   "description": "Tslint configurations.",
   "author": "noahluftyang <ykd1217@gmail.com>",
   "license": "MIT",
@@ -14,7 +14,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "tslint ."
+    "lint": "tslint -p ."
   },
   "peerDependencies": {
     "tslint": "^5.9.1",

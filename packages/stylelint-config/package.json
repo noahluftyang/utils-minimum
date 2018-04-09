@@ -1,6 +1,6 @@
 {
   "name": "@codemakebros/stylelint-config",
-  "version": "0.0.2-rc1",
+  "version": "0.0.2-rc2",
   "description": "Stylelint configurations.",
   "author": "ykd1217 <ykd1217@gmail.com>",
   "license": "MIT",
@@ -19,7 +19,7 @@
   },
   "peerDependencies": {
     "stylelint": "^9.2.0",
-    "stylelint-no-unsupported-browser-features": "^2.0.0",
+    "stylelint-no-unsupported-browser-features": "^3.0.0",
     "stylelint-scss": "^3.0.0",
     "stylelint-selector-bem-pattern": "^2.0.0"
   }
