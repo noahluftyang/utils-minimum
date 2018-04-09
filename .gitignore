@@ -1,4 +1,4 @@
-# Created by https://www.gitignore.io/api/git,vim,osx,node,windows,intellij
+# Created by https://www.gitignore.io/api/git,vim,osx,node,windows,intellij,visualstudiocode
 
 ### Git ###
 *.orig
@@ -158,10 +158,8 @@ Temporary Items
 
 ### Vim ###
 # swap
-[._]*.s[a-v][a-z]
-[._]*.sw[a-p]
-[._]s[a-v][a-z]
-[._]sw[a-p]
+.sw[a-p]
+.*.sw[a-p]
 # session
 Session.vim
 # temporary
@@ -169,6 +167,14 @@ Session.vim
 *~
 # auto-generated tag files
 tags
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
 
 ### Windows ###
 # Windows thumbnail cache files
@@ -191,4 +197,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/git,vim,osx,node,windows,intellij
+
+# End of https://www.gitignore.io/api/git,vim,osx,node,windows,intellij,visualstudiocode
