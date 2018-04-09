@@ -5,7 +5,7 @@
 // Global import
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 // const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
-const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
+// const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const { DefinePlugin, IgnorePlugin } = require('webpack');
 
@@ -35,7 +35,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {},
-    plugins: [new ModuleScopePlugin(srcDir, [packageJson])]
+    // plugins: [new ModuleScopePlugin(srcDir, [packageJson])]
   },
   plugins: [
     new DefinePlugin({

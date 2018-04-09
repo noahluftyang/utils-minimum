@@ -1,0 +1,1 @@
+# @codemakebros/tslint-config

@@ -1,0 +1,6 @@
+{
+  "include": ["examples/**/*"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {},
+  "compileOnSave": false
+}
