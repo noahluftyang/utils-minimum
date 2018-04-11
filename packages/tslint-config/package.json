@@ -1,6 +1,6 @@
 {
   "name": "@codemakebros/tslint-config",
-  "version": "0.0.2-rc2",
+  "version": "0.0.2-rc3",
   "description": "TSLint config.",
   "homepage": "https://github.com/codemakebros/utils-minimum/tree/master/packages/tslint-config",
   "author": "noahluftyang <ykd1217@gmail.com>",

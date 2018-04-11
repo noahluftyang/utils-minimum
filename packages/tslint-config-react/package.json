@@ -1,6 +1,6 @@
 {
   "name": "@codemakebros/tslint-config-react",
-  "version": "0.0.1",
+  "version": "0.0.2-rc0",
   "description": "TSLint config for React projects.",
   "homepage": "https://github.com/codemakebros/utils-minimum/tree/master/packages/tslint-config-react",
   "author": "noahluftyang <ykd1217@gmail.com>",

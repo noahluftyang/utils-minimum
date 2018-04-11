@@ -1,6 +1,6 @@
 {
   "name": "@codemakebros/eslint-config-react",
-  "version": "0.0.1",
+  "version": "0.0.2-rc0",
   "description": "ESLint sharable config for React projects.",
   "homepage": "https://github.com/codemakebros/utils-minimum/tree/master/packages/eslint-config-react",
   "author": "ykd1217 <ykd1217@gmail.com>",
