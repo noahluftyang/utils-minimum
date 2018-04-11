@@ -1,25 +1,29 @@
 {
   "name": "utils-minimum",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "description": "Development utils for front-end application.",
   "license": "MIT",
   "keywords": [
     "javascript",
     "typescript",
+    "jsx",
     "css",
     "scss",
     "webpack",
     "eslint",
     "tslint",
-    "stylelint"
+    "stylelint",
+    "react",
+    "angular"
   ],
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
+    "lint": "lerna run lint",
     "release": "lerna publish",
-    "prettier": "prettier 'packages/**/*.js'"
+    "prettier": "prettier --write 'packages/**/*.js'"
   },
   "devDependencies": {
     "@angular/common": "^5.2.9",

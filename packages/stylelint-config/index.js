@@ -1,11 +1,7 @@
 module.exports = {
-  extends: [
-    './rules/bem',
-    './rules/browser',
-    './rules/scss'
-  ],
+  extends: ['./rules/bem', './rules/browser', './rules/scss'],
   rules: {
-    /**
+    /*
      * Possible errors
      */
     // Disallow invalid hex colors.
@@ -57,7 +53,7 @@ module.exports = {
     // Disallow double-slash comments (//...) which are not supported by CSS and could lead to unexpected results.
     'no-invalid-double-slash-comments': [true, { severity: 'warning' }],
 
-    /**
+    /*
      * Limit language features
      */
     // Require (where possible) or disallow named colors.
@@ -172,10 +168,86 @@ module.exports = {
     // Limit the allowed nesting depth.
     'max-nesting-depth': [2, { ignore: 'blockless-at-rules' }],
     // Disallow unknown animations.
-    'no-unknown-animations': true
+    'no-unknown-animations': true,
 
-    /**
+    /*
      * Stylistic issues
      */
+    // Specify lowercase or uppercase for hex colors.
+    'color-hex-case': 'lower',
+    // Specify short or long notation for hex colors.
+    'color-hex-length': 'short',
+    // Specify whether or not quotation marks should be used around font family names.
+    'font-family-name-quotes': 'always-unless-keyword',
+    // Require numeric or named (where possible) font-weight values. Also, when named values are expected, require only valid names.
+    'font-weight-notation': 'numeric',
+    // Require a newline or disallow whitespace before the commas of functions.
+    'function-comma-newline-after': 'always',
+    // Require a newline or disallow whitespace before the commas of functions.
+    'function-comma-newline-before': 'always',
+    // Require a single space or disallow whitespace after the commas of functions.
+    'function-comma-space-after': 'always',
+    // Require a single space or disallow whitespace before the commas of functions.
+    'function-comma-space-before': 'never',
+    // Limit the number of adjacent empty lines within functions.
+    'function-max-empty-lines': 0,
+    // Specify lowercase or uppercase for function names.
+    'function-name-case': 'lower',
+    // Require a newline or disallow whitespace on the inside of the parentheses of functions.
+    'function-parentheses-newline-inside': 'always-multi-line',
+    // Require a single space or disallow whitespace on the inside of the parentheses of functions.
+    'function-parentheses-space-inside': 'never',
+    // Require or disallow quotes for urls.
+    'function-url-quotes': 'always',
+    // Require or disallow whitespace after functions.
+    'function-whitespace-after': 'always',
+    // Require or disallow a leading zero for fractional numbers less than 1.
+    'number-leading-zero': 'always',
+    // Disallow trailing zeros in numbers.
+    'number-no-trailing-zeros': true,
+    // Specify single or double quotes around strings.
+    'string-quotes': 'single',
+    // Disallow units for zero lengths.
+    'length-zero-no-unit': true,
+    // Specify lowercase or uppercase for units.
+    'unit-case': 'lower',
+    // Specify lowercase or uppercase for keywords values.
+    'value-keyword-case': 'lower',
+    // Require a newline or disallow whitespace after the commas of value lists.
+    'value-list-comma-newline-after': 'always-multi-line',
+    // Require a newline or disallow whitespace before the commas of value lists.
+    'value-list-comma-newline-before': 'always-multi-line',
+    // Require a single space or disallow whitespace after the commas of value lists.
+    'value-list-comma-space-after': 'always',
+    // Require a single space or disallow whitespace before the commas of value lists.
+    'value-list-comma-space-before': 'never',
+    // Limit the number of adjacent empty lines within value lists.
+    'value-list-max-empty-lines': 0,
+    // Require or disallow an empty line before custom properties.
+    'custom-property-empty-line-before': 'never',
+    // Specify lowercase or uppercase for properties.
+    'property-case': 'lower',
+    // Require a single space or disallow whitespace after the bang of declarations.
+    'declaration-bang-space-after': 'never',
+    // Require a single space or disallow whitespace before the bang of declarations.
+    'declaration-bang-space-before': 'always',
+    // Require a newline or disallow whitespace after the colon of declarations.
+    'declaration-colon-newline-after': 'always-multi-line',
+    // Require a single space or disallow whitespace after the colon of declarations.
+    'declaration-colon-space-after': 'always-single-line',
+    // Require a single space or disallow whitespace before the colon of declarations.
+    'declaration-colon-space-before': 'never',
+    // Require or disallow an empty line before declarations.
+    'declaration-empty-line-before': 'never',
+    // Require a newline or disallow whitespace after the semicolons of declaration blocks.
+    'declaration-block-semicolon-newline-after': 'always',
+    // Require a newline or disallow whitespace before the semicolons of declaration blocks.
+    'declaration-block-semicolon-newline-before': 'never-multi-line',
+    // Require a single space or disallow whitespace after the semicolons of declaration blocks.
+    'declaration-block-semicolon-space-after': 'always-single-line',
+    // Require a single space or disallow whitespace before the semicolons of declaration blocks.
+    'declaration-block-semicolon-space-before': 'never',
+    // Require or disallow a trailing semicolon within declaration blocks.
+    'declaration-block-trailing-semicolon': 'always'
   }
-}
+};

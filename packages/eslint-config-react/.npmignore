@@ -1,6 +1,6 @@
 examples
 test
+.eslintrc
 .npmignore
-.stylelintrc
 CHANGELOG.md
 README.md

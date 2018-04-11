@@ -1,0 +1,31 @@
+{
+  "name": "@codemakebros/tslint-config-react",
+  "version": "0.0.1",
+  "description": "TSLint config for React projects.",
+  "homepage": "https://github.com/codemakebros/utils-minimum/tree/master/packages/tslint-config-react",
+  "author": "noahluftyang <ykd1217@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/tslint-config-react",
+  "keywords": [
+    "typescript",
+    "styleguide",
+    "tslint",
+    "tslintconfig",
+    "config",
+    "react",
+    "jsx"
+  ],
+  "engines": {
+    "node": ">= 8.9.4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint -p ."
+  },
+  "dependencies": {
+    "@codemakebros/tslint-config": "^0.0.2-rc3"
+  },
+  "peerDependencies": {
+    "tslint-react": "^3.5.1"
+  }
+}

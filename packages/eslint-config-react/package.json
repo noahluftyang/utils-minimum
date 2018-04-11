@@ -1,0 +1,32 @@
+{
+  "name": "@codemakebros/eslint-config-react",
+  "version": "0.0.1",
+  "description": "ESLint sharable config for React projects.",
+  "homepage": "https://github.com/codemakebros/utils-minimum/tree/master/packages/eslint-config-react",
+  "author": "ykd1217 <ykd1217@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/eslint-config-react",
+  "keywords": [
+    "javascript",
+    "styleguide",
+    "eslint",
+    "eslintconfig",
+    "config",
+    "react",
+    "jsx"
+  ],
+  "engines": {
+    "node": ">= 8.9.4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@codemakebros/eslint-config": "^0.0.2-rc3"
+  },
+  "peerDependencies": {
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
+  }
+}

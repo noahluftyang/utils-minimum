@@ -1,14 +1,18 @@
 {
   "name": "@codemakebros/stylelint-config",
   "version": "0.0.2-rc2",
-  "description": "Stylelint configurations.",
+  "description": "Stylelint config.",
+  "homepage": "https://github.com/codemakebros/utils-minimum/tree/master/packages/stylelint-config",
   "author": "ykd1217 <ykd1217@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/stylelint-config",
   "keywords": [
     "css",
     "scss",
-    "stylelint"
+    "styleguide",
+    "stylelint",
+    "stylelintconfig",
+    "config"
   ],
   "engines": {
     "node": ">= 8.9.4"

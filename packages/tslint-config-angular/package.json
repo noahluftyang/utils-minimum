@@ -1,0 +1,37 @@
+{
+  "name": "@codemakebros/tslint-config-angular",
+  "version": "0.0.1",
+  "description": "TSLint config for Angular projects.",
+  "homepage": "https://github.com/codemakebros/utils-minimum/tree/master/packages/tslint-config-angular",
+  "author": "noahluftyang <ykd1217@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/tslint-config-angular",
+  "keywords": [
+    "typescript",
+    "styleguide",
+    "tslint",
+    "tslintconfig",
+    "config",
+    "angular"
+  ],
+  "engines": {
+    "node": ">= 8.9.4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "tslint -p ."
+  },
+  "dependencies": {
+    "@codemakebros/tslint-config": "^0.0.2-rc3"
+  },
+  "peerDependencies": {
+    "@angular/common": "^5.2.9",
+    "@angular/compiler": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "@angular/platform-browser": "^5.2.9",
+    "@angular/platform-browser-dynamic": "^5.2.9",
+    "rxjs": "^5.5.8",
+    "tslint-angular": "^1.1.1",
+    "zone.js": "^0.8.26"
+  }
+}

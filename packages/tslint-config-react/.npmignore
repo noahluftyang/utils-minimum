@@ -1,6 +1,7 @@
 examples
 test
 .npmignore
-.stylelintrc
 CHANGELOG.md
 README.md
+tsconfig.json
+tslint.json
