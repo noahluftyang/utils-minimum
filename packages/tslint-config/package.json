@@ -18,7 +18,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "tslint -p ."
+    "lint": "tslint -p . -t stylish"
   },
   "peerDependencies": {
     "tslint": "^5.9.1",

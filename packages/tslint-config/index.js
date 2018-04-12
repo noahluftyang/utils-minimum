@@ -1,5 +1,5 @@
 module.exports = {
-  extends: './rules/eslint',
+  extends: ['./rules/eslint', './rules/microsoft', './rules/test'],
   rules: {
     /*
      * TypeScript-specific
@@ -49,21 +49,21 @@ module.exports = {
     // Requires any function or method that returns a promise to be marked async.
     'promise-function-async': true,
     // Requires type definitions to exist.
-    typedef: false,
+    'typedef': false,
     // Requires or disallows whitespace for type definitions.
     'typedef-whitespace': [
       true,
       {
         'call-signature': 'nospace',
         'index-signature': 'nospace',
-        parameter: 'nospace',
+        'parameter': 'nospace',
         'property-declaration': 'nospace',
         'variable-declaration': 'nospace'
       },
       {
         'call-signature': 'onespace',
         'index-signature': 'onespace',
-        parameter: 'onespace',
+        'parameter': 'onespace',
         'property-declaration': 'onespace',
         'variable-declaration': 'onespace'
       }
@@ -79,11 +79,11 @@ module.exports = {
     // Disallows the comma operator to be used.
     'ban-comma-operator': true,
     // Bans the use of specific functions or global methods.
-    ban: false,
+    'ban': false,
     // Enforces braces for if/for/do/while statements.
-    curly: false,
+    'curly': false,
     // Requires a for ... in statement to be filtered with an if statement.
-    forin: true,
+    'forin': true,
     // Disallows importing the specified modules directly via import and require. Instead only sub modules may be imported from that module.
     'import-blacklist': false,
     // Only allows labels in sensible locations.
@@ -152,9 +152,9 @@ module.exports = {
     // Warns when a method is used as outside of a method call.
     'no-unbound-method': [true, 'ignore-static'],
     // Disallows classes that are not strictly necessary.
-    'no-unnecessary-class': true,
+    'no-unnecessary-class': [true, 'allow-empty-class'],
     // Warns when using an expression of type ‘any’ in a dynamic way. Uses are only allowed if they would work for {} | null | undefined. Type casts and tests are allowed. Expressions that work on all values (such as "" + x) are allowed.
-    'no-unsafe-any': true,
+    'no-unsafe-any': false,
     // Disallows control flow statements, such as return, continue, break and throws in finally blocks.
     'no-unsafe-finally': true,
     // Disallows unused expression statements.
@@ -175,7 +175,7 @@ module.exports = {
       severity: 'warning'
     },
     // Requires the radix parameter to be specified when calling parseInt.
-    radix: true,
+    'radix': true,
     // When adding two variables, operands must both be of type number or of type string.
     'restrict-plus-operands': true,
     // Restricts the types allowed in boolean expressions. By default only booleans are allowed.
@@ -186,8 +186,9 @@ module.exports = {
     'switch-default': true,
     // Requires === and !== in place of == and !=.
     'triple-equals': true,
+    // NOTE: deprecated
     // Makes sure result of typeof is compared to correct string values
-    'typeof-compare': true,
+    // 'typeof-compare': true,
     // Warns if an explicitly specified type argument is the default for that type parameter.
     'use-default-type-parameter': true,
     // Enforces use of the isNaN() function to check for NaN references instead of a comparison to the NaN constant.
@@ -199,11 +200,11 @@ module.exports = {
     // Enforces a threshold of cyclomatic complexity.
     'cyclomatic-complexity': true,
     // Warns when deprecated APIs are used.
-    deprecation: true,
+    'deprecation': true,
     // Ensures the file ends with a newline.
-    eofline: true,
+    'eofline': true,
     // Enforces indentation with tabs or spaces.
-    indent: [true, 'spaces', 2],
+    'indent': [true, 'spaces', 2],
     // Enforces a consistent linebreak style.
     'linebreak-style': [true, 'LF'],
     // A file may not contain more than the specified number of classes
@@ -242,7 +243,7 @@ module.exports = {
      * Style
      */
     // Enforces vertical alignment.
-    align: [true, 'parameters', 'arguments', 'statements', 'members', 'elements'],
+    'align': [true, 'parameters', 'arguments', 'statements', 'members', 'elements'],
     // Requires using either ‘T[]’ or ‘Array' for arrays.
     'array-type': [true, 'generic'],
     // Requires parentheses around the parameters of arrow function definitions.
@@ -261,7 +262,7 @@ module.exports = {
     // TODO:
     'completed-docs': false,
     // Enforces UTF-8 file encoding.
-    encoding: true,
+    'encoding': true,
     // Enforces a certain header comment for all files, matched by a regular expression.
     'file-header': false,
     // Ensures proper spacing between import statement keywords
@@ -328,12 +329,12 @@ module.exports = {
     // Prefer a template expression over string literal concatenation.
     'prefer-template': true,
     // Requires single or double quotes for string literals.
-    quotemark: [true, 'single', 'jsx-double', 'avoid-template', 'avoid-escape'],
+    'quotemark': [true, 'single', 'jsx-double', 'avoid-template', 'avoid-escape'],
     // Prefer return; in void functions and return undefined; in value-returning functions.
     'return-undefined': false,
     // Enforces consistent semicolon usage at the end of every statement.
     // TODO: ignore-interfaces, ignore-bound-class-methods, strict-bound-class-methods
-    semicolon: [true, 'always'],
+    'semicolon': [true, 'always'],
     // Require or disallow a space before function parenthesis
     'space-before-function-paren': [
       true,
@@ -354,7 +355,7 @@ module.exports = {
     // Checks variable names for various errors.
     'variable-name': [true, 'check-format', 'allow-pascal-case', 'ban-keywords'],
     // Enforces whitespace style conventions.
-    whitespace: [
+    'whitespace': [
       true,
       'check-branch',
       'check-decl',

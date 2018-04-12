@@ -248,6 +248,75 @@ module.exports = {
     // Require a single space or disallow whitespace before the semicolons of declaration blocks.
     'declaration-block-semicolon-space-before': 'never',
     // Require or disallow a trailing semicolon within declaration blocks.
-    'declaration-block-trailing-semicolon': 'always'
+    'declaration-block-trailing-semicolon': 'always',
+    // Require or disallow an empty line before the closing brace of blocks.
+    'block-closing-brace-empty-line-before': 'never',
+    // Require a newline or disallow whitespace after the closing brace of blocks.
+    'block-closing-brace-newline-after': 'always',
+    // Require a newline or disallow whitespace before the closing brace of blocks.
+    'block-closing-brace-newline-before': 'always-multi-line',
+    // Require a single space or disallow whitespace after the closing brace of blocks.
+    'block-closing-brace-space-after': 'always-single-line',
+    // Require a single space or disallow whitespace before the closing brace of blocks.
+    'block-closing-brace-space-before': 'always',
+    // Require a newline after the opening brace of blocks.
+    'block-opening-brace-newline-after': 'always',
+    // Require a newline or disallow whitespace before the opening brace of blocks.
+    'block-opening-brace-newline-before': 'never-multi-line',
+    // Require a single space or disallow whitespace after the opening brace of blocks.
+    'block-opening-brace-space-after': 'always',
+    // Require a single space or disallow whitespace before the opening brace of blocks.
+    'block-opening-brace-space-before': 'always',
+    // Require a single space or disallow whitespace on the inside of the brackets within attribute selectors.
+    'selector-attribute-brackets-space-inside': 'never',
+    // Require a single space or disallow whitespace after operators within attribute selectors.
+    'selector-attribute-operator-space-after': 'never',
+    // Require a single space or disallow whitespace before operators within attribute selectors.
+    'selector-attribute-operator-space-before': 'never',
+    // Require or disallow quotes for attribute values.
+    'selector-attribute-quotes': 'never',
+    // Require a single space or disallow whitespace after the combinators of selectors.
+    'selector-combinator-space-after': 'always',
+    // Require a single space or disallow whitespace before the combinators of selectors.
+    'selector-combinator-space-before': 'always',
+    // Disallow non-space characters for descendant combinators of selectors.
+    'selector-descendant-combinator-no-non-space': null,
+    // Specify lowercase or uppercase for pseudo-class selectors.
+    'selector-pseudo-class-case': 'lower',
+    // Require a single space or disallow whitespace on the inside of the parentheses within pseudo-class selectors.
+    'selector-pseudo-class-parentheses-space-inside': 'never',
+    // Specify lowercase or uppercase for pseudo-element selectors.
+    'selector-pseudo-element-case': 'lower',
+    // Specify single or double colon notation for applicable pseudo-elements.
+    'selector-pseudo-element-colon-notation': 'single',
+    // Specify lowercase or uppercase for type selectors.
+    'selector-type-case': 'lower',
+    // Require a newline or disallow whitespace after the commas of selector lists.
+    'selector-list-comma-newline-after': 'always-multi-line',
+    // Require a newline or disallow whitespace before the commas of selector lists.
+    'selector-list-comma-newline-before': 'never-multi-line',
+    // Require a single space or disallow whitespace after the commas of selector lists.
+    'selector-list-comma-space-after': 'always',
+    // Require a single space or disallow whitespace before the commas of selector lists.
+    'selector-list-comma-space-before': 'never',
+    // Require or disallow an empty line before rules.
+    'rule-empty-line-before': 'always',
+
+    // TODO: Media & At-rule
+
+    // Require or disallow an empty line before comments.
+    'comment-empty-line-before': 'always',
+    // Require or disallow whitespace on the inside of comment markers.
+    'comment-whitespace-inside': 'always',
+    // Specify indentation.
+    'indentation': 2,
+    // Limit the number of adjacent empty lines.
+    'max-empty-lines': 2,
+    // Limit the length of a line.
+    'max-line-length': [100, { severity: 'warnings' }],
+    // Disallow end-of-line whitespace.
+    'no-eol-whitespace': true,
+    // Disallow missing end-of-source newlines.
+    'no-missing-end-of-source-newline': true
   }
 };

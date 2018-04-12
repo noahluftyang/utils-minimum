@@ -19,7 +19,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "tslint -p ."
+    "lint": "tslint -p . -t stylish"
   },
   "dependencies": {
     "@codemakebros/tslint-config": "^0.0.2-rc3"

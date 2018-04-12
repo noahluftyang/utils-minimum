@@ -1,14 +1,10 @@
 module.exports = {
-  extends: [
-    '@codemakebros/tslint-config',
-    'tslint-react',
-    'tslint-microsoft-contrib'
-  ],
+  extends: ['@codemakebros/tslint-config', 'tslint-react', 'tslint-microsoft-contrib'],
   rules: {
-    /*
+    /**
      * tslint-react
      */
-    /*
+    /**
      * Enforces a consistent style for multiline JSX elements which promotes ease of editing via
      * line-wise manipulations as well as maintainabilty via small diffs when changes are made.
      */
@@ -17,7 +13,7 @@ module.exports = {
     'jsx-ban-elements': true,
     // Allows blacklisting of props in JSX with an optional explanatory message in the reported failure.
     'jsx-ban-props': true,
-    /*
+    /**
      * When using a boolean attribute in JSX, you can set the attribute value to true or omit the value.
      * This rule will enforce one or the other to keep consistency in your code.
      */
@@ -27,10 +23,13 @@ module.exports = {
     // Requires or bans spaces before and after the = token in JSX element attributes.
     'jsx-equals-spacing': [true, 'never'],
     // Warns for missing key props in JSX element array literals and inside return statements of Array.prototype.map callbacks.
-    'jsx-key': [true, {
-      severity: 'warning'
-    }],
-    /*
+    'jsx-key': [
+      true,
+      {
+        severity: 'warning'
+      }
+    ],
+    /**
      * Forbids function binding in JSX attributes. This has the same intent as jsx-no-lambda in helping you avoid excessive re-rendres.
      * Note that this currently only does a simple syntactic check, not a semantic one (it doesn't use the type checker). So it may have some rare false positives if you define your own .bind function and supply this as a parameter.
      */
@@ -45,14 +44,14 @@ module.exports = {
     'jsx-use-translation-function': false,
     // Enforces that JSX elements with no children are self-closing.
     'jsx-self-close': true,
-    /*
+    /**
      * Enforces that multiline JSX expressions are wrapped with parentheses.
      * Opening parenthesis must be followed by a newline.
      * Closing parenthesis must be preceded by a newline.
      */
     'jsx-wrap-multiline': true,
 
-    /*
+    /**
      * tslint-microsoft-contrib
      */
     // For accessibility of your website, anchor element link text should be at least 4 characters long. Links with the same HREF should have the same link text. Links that point to different HREFs should have different link text. Links with images and text content, the alt attribute should be unique to the text content or empty.
@@ -90,13 +89,20 @@ module.exports = {
     // Do not use React's dangerouslySetInnerHTML API. This rule finds usages of the dangerouslySetInnerHTML API (but not any JSX references).
     'react-no-dangerous-html': true,
     // Several errors can occur when using React and React.Component subclasses. When using React components you must be careful to correctly bind the 'this' reference on any methods that you pass off to child components as callbacks. For example, it is common to define a private method called 'onClick' and then specify onClick={this.onClick} as a JSX attribute. If you do this then the 'this' reference will be undefined when your private method is invoked. The React documentation suggests that you bind the 'this' reference on all of your methods within the constructor: this.onClick = this.onClick.bind(this);. This rule will create a violation if 1) a method reference is passed to a JSX attribute without being bound in the constructor. And 2) a method is bound multiple times in the constructor. Another issue that can occur is binding the 'this' reference to a function within the render() method. For example, many people will create an anonymous lambda within the JSX attribute to avoid the 'this' binding issue: onClick={() => { this.onClick(); }}. The problem with this is that a new instance of an anonymous function is created every time render() is invoked. When React compares virutal DOM properties within shouldComponentUpdate() then the onClick property will look like a new property and force a re-render. You should avoid this pattern because creating function instances within render methods breaks any logic within shouldComponentUpdate() methods. This rule creates violations if 1) an anonymous function is passed as a JSX attribute. And 2) if a function instantiated in local scope is passed as a JSX attribute. This rule can be configured via the "allow-anonymous-listeners" parameter. If you want to suppress violations for the anonymous listener scenarios then configure that rule like this: "react-this-binding-issue": [ true, { 'allow-anonymous-listeners': true } ]
-    'react-this-binding-issue': [true, {
-      'allow-anonymous-listeners': true
-    }],
+    'react-this-binding-issue': [
+      true,
+      {
+        'allow-anonymous-listeners': true
+      }
+    ],
     // Consistently use spaces around the brace characters of JSX attributes. You can either allow or ban spaces between the braces and the values they enclose.
-    'react-tsx-curly-spacing': [true, 'never', {
-      allowMultiline: true
-    }],
+    'react-tsx-curly-spacing': [
+      true,
+      'never',
+      {
+        allowMultiline: true
+      }
+    ],
     // Remove unneeded properties defined in React Props and State interfaces. Any interface named Props or State is defined as a React interface. All fields in these interfaces must be referenced. This rule can be configured with regexes to match custom Props and State interface names.
     'react-unused-props-and-state': true
   }
