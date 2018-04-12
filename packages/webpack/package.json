@@ -2,6 +2,7 @@
   "name": "@codemakebros/webpack",
   "version": "0.0.2-rc3",
   "description": "Webpack scripts and configurations.",
+  "homepage": "https://github.com/codemakebros/utils-minimum/tree/master/packages/webpack",
   "author": "noahluftyang <ykd1217@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/webpack",
@@ -13,8 +14,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "prettier": "prettier --write '**/*.js'"
+    "lint": "eslint ."
   },
   "dependencies": {
     "clean-webpack-plugin": "^0.1.19",
@@ -24,10 +24,11 @@
     "css-loader": "^0.28.11",
     "dotenv": "^5.0.1",
     "eslint-loader": "^2.0.0",
-    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "fork-ts-checker-webpack-plugin": "^0.4.1",
     "html-webpack-plugin": "^3.1.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "optimize-css-assets-webpack-plugin": "^4.0.0",
     "ora": "^2.0.0",
     "postcss-loader": "^2.1.3",
     "raw-loader": "^0.5.1",

@@ -26,8 +26,7 @@ const configValue = {
     cdn: getEnvOrDefault('CDN_URL', '')
   },
   production: {
-    api: getEnvOrDefault('PROD_API_URL', ''),
-    tag: getEnvOrDefault('CIRCLE_TAG', 'prod')
+    api: getEnvOrDefault('PROD_API_URL', '')
   },
   development: {
     host: getEnvOrDefault('HOST', 'localhost'),

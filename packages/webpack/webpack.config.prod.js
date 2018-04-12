@@ -16,15 +16,14 @@ const { resolve } = require('path');
 const { LoaderOptionsPlugin, optimize } = require('webpack');
 
 // Local import
-const { tag } = require('./config/env');
-const { distDir, indexHtml, srcDir, staticDir } = require('./config/path');
+const { distDir, indexHtml, polyfills, srcDir, staticDir, vendor } = require('./config/path');
 
 module.exports = {
   mode: 'production',
   entry: {
     bundle: srcDir,
-    vendor: resolve(srcDir, 'vendor'),
-    polyfills: resolve(srcDir, 'polyfills')
+    vendor,
+    polyfills
   },
   output: {
     path: distDir,
@@ -33,19 +32,21 @@ module.exports = {
     chunkFilename: '[name].[chunkhash:8].chunk.js'
   },
   module: {
-    rules: [{
-      test: /\.s?css$/,
-      use: [
-        MiniCssExtractPlugin.loader,
-        {
-          loader: 'css-loader',
-          options: {
-            importLoaders: 1
-          }
-        },
-        'postcss-loader'
-      ]
-    }]
+    rules: [
+      {
+        test: /\.s?css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
+          },
+          'postcss-loader'
+        ]
+      }
+    ]
   },
   performance: {
     hints: 'warning'
@@ -87,10 +88,10 @@ module.exports = {
       threshold: 10240,
       minRatio: 0.8
     }),
-    new CopyWebpackPlugin([{ from: staticDir, to: '..' }]),
+    new CopyWebpackPlugin([{ from: staticDir, to: '.' }]),
     new HtmlWebpackPlugin({
       inject: true,
-      filename: '../index.html',
+      filename: './index.html',
       template: indexHtml,
       minify: {
         removeComments: true,

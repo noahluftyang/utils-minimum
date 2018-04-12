@@ -15,26 +15,41 @@ const { packageJson, srcDir } = require('./config/path');
 
 module.exports = {
   module: {
-    rules: [{
-      test: /\.html$/,
-      loader: 'raw-loader'
-    }, {
-      test: /\.(jpg|png)$/,
-      use: {
-        loader: 'url-loader',
-        options: {
-          limit: 10000,
-          name: '[name].[hash:8].[ext]'
+    rules: [
+      {
+        test: /\.js$/,
+        include: srcDir,
+        use: ['source-map-loader', 'eslint-loader'],
+        enforce: 'pre'
+      },
+      {
+        test: /\.jsx?$/,
+        include: srcDir,
+        use: 'babel-loader'
+      },
+      {
+        test: /\.html$/,
+        loader: 'raw-loader'
+      },
+      {
+        test: /\.(jpg|png)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 10000,
+            name: '[name].[hash:8].[ext]'
+          }
         }
+      },
+      {
+        test: /\.(gif|svg|otf|ttf)$/,
+        use: 'file-loader'
       }
-    }, {
-      test: /\.(gif|svg|otf|ttf)$/,
-      use: 'file-loader'
-    }]
+    ]
   },
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
-    alias: {},
+    alias: {}
     // plugins: [new ModuleScopePlugin(srcDir, [packageJson])]
   },
   plugins: [
@@ -46,6 +61,7 @@ module.exports = {
       SENTRY: JSON.stringify(sentry)
     }),
     new ForkTsCheckerWebpackPlugin({
+      tslint: true,
       watch: srcDir
     }),
     new IgnorePlugin(/^\.\/locale$/, /moment$/),
