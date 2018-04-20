@@ -1,5 +1,4 @@
 module.exports = {
-  extends: 'tslint-microsoft-contrib',
   rules: {
     // The name of the exported module must match the filename of the source file.
     'export-name': false,

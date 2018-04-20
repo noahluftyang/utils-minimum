@@ -1,5 +1,4 @@
 module.exports = {
-  extends: 'tslint-microsoft-contrib',
   rules: {
     // Avoid Chai assertions that invoke indexOf and compare for a -1 result.
     'chai-prefer-contains-to-index-of': true,

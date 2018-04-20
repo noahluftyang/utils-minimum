@@ -2,18 +2,25 @@
   "include": ["examples/**/*"],
   "exclude": ["node_modules"],
   "compilerOptions": {
+    // Basic
     "jsx": "react",
 
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-
+    // Strict mode
     "strict": true,
     "noImplicitAny": true,
+    "strictNullChecks": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictPropertyInitialization": true
+
+    // Additional checks
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Module resolution
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": false
   },
   "compileOnSave": false
 }

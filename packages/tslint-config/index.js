@@ -1,5 +1,11 @@
 module.exports = {
-  extends: ['./rules/eslint', './rules/microsoft', './rules/test'],
+  extends: [
+    'tslint-eslint-rules',
+    'tslint-microsoft-contrib',
+    './rules/eslint',
+    './rules/microsoft',
+    './rules/test'
+  ],
   rules: {
     /**
      * TypeScript-specific
