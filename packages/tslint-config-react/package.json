@@ -1,6 +1,6 @@
 {
   "name": "@codemakebros/tslint-config-react",
-  "version": "0.0.2-rc1",
+  "version": "0.0.2-rc2",
   "description": "TSLint config for React projects.",
   "homepage": "https://github.com/codemakebros/utils-minimum/tree/master/packages/tslint-config-react",
   "author": "noahluftyang <ykd1217@gmail.com>",
@@ -23,7 +23,7 @@
     "lint": "tslint -p . -t stylish"
   },
   "dependencies": {
-    "@codemakebros/tslint-config": "^0.0.2-rc4"
+    "@codemakebros/tslint-config": "^0.0.2-rc5"
   },
   "peerDependencies": {
     "tslint-react": "^3.5.1"

@@ -1,6 +1,6 @@
 {
   "name": "@codemakebros/webpack",
-  "version": "0.0.2-rc4",
+  "version": "0.0.2-rc5",
   "description": "Webpack scripts and configurations.",
   "homepage": "https://github.com/codemakebros/utils-minimum/tree/master/packages/webpack",
   "author": "noahluftyang <ykd1217@gmail.com>",

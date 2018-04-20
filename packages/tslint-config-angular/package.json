@@ -1,6 +1,6 @@
 {
   "name": "@codemakebros/tslint-config-angular",
-  "version": "0.0.2-rc0",
+  "version": "0.0.2-rc1",
   "description": "TSLint config for Angular projects.",
   "homepage": "https://github.com/codemakebros/utils-minimum/tree/master/packages/tslint-config-angular",
   "author": "noahluftyang <ykd1217@gmail.com>",
@@ -22,7 +22,7 @@
     "lint": "tslint -p . -t stylish"
   },
   "dependencies": {
-    "@codemakebros/tslint-config": "^0.0.2-rc4"
+    "@codemakebros/tslint-config": "^0.0.2-rc5"
   },
   "peerDependencies": {
     "@angular/common": "^5.2.9",

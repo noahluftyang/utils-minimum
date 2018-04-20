@@ -1,6 +1,6 @@
 {
   "name": "@codemakebros/eslint-config",
-  "version": "0.0.2-rc4",
+  "version": "0.0.2-rc5",
   "description": "ESLint sharable config.",
   "homepage": "https://github.com/codemakebros/utils-minimum/tree/master/packages/eslint-config",
   "author": "ykd1217 <ykd1217@gmail.com>",
