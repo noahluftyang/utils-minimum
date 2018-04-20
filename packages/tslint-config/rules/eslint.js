@@ -7,8 +7,8 @@ module.exports = {
     'no-constant-condition': true,
     // Disallow control characters in regular expressions
     'no-control-regex': true,
-    // Disallow duplicate cases in case statements
-    'no-duplicate-case': true,
+    // NOTE: deprecated
+    // 'no-duplicate-case': true,
     // Disallow empty character classes in regular expressions
     'no-empty-character-class': true,
     // Disallow reassigning exceptions in catch clauses
@@ -21,14 +21,16 @@ module.exports = {
     'no-inner-declarations': [true, 'functions'],
     // disallow invalid regular expression strings in the RegExp constructor
     'no-invalid-regexp': true,
+    // NOTE: deprecated
+    // 'ter-no-irregular-whitespace': true,
     // disallow multiple spaces in a regular expression literal
     'no-regex-spaces': true,
     // Avoid code that looks like two expressions but is actually one
     'no-unexpected-multiline': true,
     // enforce valid JSDoc comments
     'valid-jsdoc': null,
-    // Ensure that the results of typeof are compared against a valid string
-    'valid-typeof': true,
+    // NOTE: deprecated
+    // 'valid-typeof': true,
 
     /**
      * Best Practices
