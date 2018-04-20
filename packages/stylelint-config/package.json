@@ -1,6 +1,6 @@
 {
   "name": "@codemakebros/stylelint-config",
-  "version": "0.0.2-rc3",
+  "version": "0.0.2-rc4",
   "description": "Stylelint config.",
   "homepage": "https://github.com/codemakebros/utils-minimum/tree/master/packages/stylelint-config",
   "author": "ykd1217 <ykd1217@gmail.com>",
