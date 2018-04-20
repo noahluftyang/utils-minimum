@@ -18,11 +18,11 @@ module.exports = {
     // NOTE: deprecated
     // 'missing-optional-annotation': true,
     // Avoid using model.get('x') and model.set('x', value) Backbone accessors outside of the owning model.
-    'no-backbone-get-set-outside-model': true,
+    'no-backbone-get-set-outside-model': false,
     // Do not use banned terms: caller, callee, eval, arguments.
     'no-banned-terms': true,
     // Do not use constant expressions in conditions.
-    'no-constant-condition': true,
+    'no-constant-condition': false,
     // Do not use control characters in regular expressions.
     'no-control-regex': true,
     // Do not use cookies

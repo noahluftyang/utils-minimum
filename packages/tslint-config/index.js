@@ -1,7 +1,7 @@
 module.exports = {
   extends: ['./rules/eslint', './rules/microsoft', './rules/test'],
   rules: {
-    /*
+    /**
      * TypeScript-specific
      */
     // Enforces function overloads to be consecutive.
@@ -18,7 +18,10 @@ module.exports = {
       severity: 'warning'
     },
     // Forbids empty interfaces.
-    'no-empty-interface': true,
+    'no-empty-interface': {
+      options: true,
+      severity: 'warning'
+    },
     // Avoid import statements with side-effect.
     'no-import-side-effect': false,
     // Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean.
@@ -71,7 +74,7 @@ module.exports = {
     // Warns for any two overloads that could be unified into one by using a union or an optional/rest parameter.
     'unified-signatures': true,
 
-    /*
+    /**
      * Functionality
      */
     // Warns for an awaited value that is not a Promise.
@@ -116,7 +119,7 @@ module.exports = {
     // Disallows eval function invocations.
     'no-eval': true,
     // Promises returned by functions must be handled appropriately.
-    'no-floating-promises': true,
+    'no-floating-promises': false,
     // Disallows iterating over an array with a for-in loop.
     'no-for-in-array': true,
     // Disallows importing modules that are not listed as dependency in the project’s package.json
@@ -179,7 +182,7 @@ module.exports = {
     // When adding two variables, operands must both be of type number or of type string.
     'restrict-plus-operands': true,
     // Restricts the types allowed in boolean expressions. By default only booleans are allowed.
-    'strict-boolean-expressions': true,
+    'strict-boolean-expressions': [true, 'allow-undefined-union'],
     // Warns for type predicates that are always true or always false. Works for ‘typeof’ comparisons to constants (e.g. ‘typeof foo === “string”’), and equality comparison to ‘null’/’undefined’. (TypeScript won’t let you compare ‘1 === 2’, but it has an exception for ‘1 === undefined’.) Does not yet work for ‘instanceof’. Does not warn for ‘if (x.y)’ where ‘x.y’ is always truthy. For that, see strict-boolean-expressions.
     'strict-type-predicates': true,
     // Require a default case in all switch statements.
@@ -194,7 +197,7 @@ module.exports = {
     // Enforces use of the isNaN() function to check for NaN references instead of a comparison to the NaN constant.
     'use-isnan': true,
 
-    /*
+    /**
      * Maintainability
      */
     // Enforces a threshold of cyclomatic complexity.
@@ -239,13 +242,13 @@ module.exports = {
       }
     ],
 
-    /*
+    /**
      * Style
      */
     // Enforces vertical alignment.
     'align': [true, 'parameters', 'arguments', 'statements', 'members', 'elements'],
     // Requires using either ‘T[]’ or ‘Array' for arrays.
-    'array-type': [true, 'generic'],
+    'array-type': [true, 'array-simple'],
     // Requires parentheses around the parameters of arrow function definitions.
     'arrow-parens': [true, 'ban-single-arg-parens'],
     // Suggests to convert() => { return x; } to () => x.
@@ -274,7 +277,7 @@ module.exports = {
     // Enforces basic format rules for JSDoc comments.
     'jsdoc-format': [true, 'check-multiline-start'],
     // Requires that a default import have the same name as the declaration it imports. Does nothing for anonymous default exports.
-    'match-default-export-name': true,
+    'match-default-export-name': false,
     // Enforces blank line before return when not the only line in the block.
     'newline-before-return': true,
     // Requires that chained method calls be broken apart onto separate lines.

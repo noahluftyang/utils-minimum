@@ -94,7 +94,7 @@ module.exports = {
     // Disallow longhand properties that can be combined into one shorthand property.
     'declaration-block-no-redundant-longhand-properties': true,
     // Disallow !important within declarations.
-    'declaration-no-important': true,
+    'declaration-no-important': [true, { severity: 'warnings' }],
     // Specify a blacklist of disallowed property and unit pairs within declarations.
     'declaration-property-unit-blacklist': null,
     // Specify a whitelist of allowed property and unit pairs within declarations.
@@ -182,9 +182,9 @@ module.exports = {
     // Require numeric or named (where possible) font-weight values. Also, when named values are expected, require only valid names.
     'font-weight-notation': 'numeric',
     // Require a newline or disallow whitespace before the commas of functions.
-    'function-comma-newline-after': 'always',
+    'function-comma-newline-after': 'always-multi-line',
     // Require a newline or disallow whitespace before the commas of functions.
-    'function-comma-newline-before': 'always',
+    'function-comma-newline-before': 'never-multi-line',
     // Require a single space or disallow whitespace after the commas of functions.
     'function-comma-space-after': 'always',
     // Require a single space or disallow whitespace before the commas of functions.

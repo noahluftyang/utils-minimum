@@ -1,7 +1,7 @@
 module.exports = {
   extends: 'tslint-eslint-rules',
   rules: {
-    /*
+    /**
      * Possible Errors
      */
     // Disallow constant expressions in conditions
@@ -17,7 +17,7 @@ module.exports = {
     // Disallow unnecessary boolean casts
     'no-extra-boolean-cast': 'error',
 
-    /*
+    /**
      * Stylistic Issues
      */
     // Enforce consistent spacing inside array brackets
