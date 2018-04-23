@@ -93,7 +93,7 @@ module.exports = {
     // Enforce consistent spacing inside braces
     'object-curly-spacing': [true, 'always'],
     // enforce padding within blocks
-    'ter-padded-blocks': true,
+    'ter-padded-blocks': [true, 'never'],
     // enforce sorting import declarations within module
     'sort-imports': null,
     // require or disallow spaces inside parentheses

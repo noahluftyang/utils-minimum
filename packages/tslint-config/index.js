@@ -65,14 +65,14 @@ module.exports = {
       {
         'call-signature': 'nospace',
         'index-signature': 'nospace',
-        'parameter': 'nospace',
+        parameter: 'nospace',
         'property-declaration': 'nospace',
         'variable-declaration': 'nospace'
       },
       {
         'call-signature': 'onespace',
         'index-signature': 'onespace',
-        'parameter': 'onespace',
+        parameter: 'onespace',
         'property-declaration': 'onespace',
         'variable-declaration': 'onespace'
       }
@@ -268,7 +268,6 @@ module.exports = {
     // Enforces formatting rules for single-line comments.
     'comment-format': [true, 'check-space'],
     // Enforces documentation for important items be filled out.
-    // TODO:
     'completed-docs': false,
     // Enforces UTF-8 file encoding.
     'encoding': true,

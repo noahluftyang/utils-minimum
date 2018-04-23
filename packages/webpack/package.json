@@ -7,14 +7,17 @@
   "license": "MIT",
   "repository": "https://github.com/codemakebros/utils-minimum/tree/master/packages/webpack",
   "keywords": [
-    "webpack"
+    "webpack",
+    "javascript",
+    "typescript"
   ],
   "engines": {
     "node": ">= 8.9.4"
   },
   "main": "index.js",
   "scripts": {
-    "lint": "eslint ."
+    "lint:js": "eslint .",
+    "prettier": "prettier --write '**/*.{js,ts,tsx}'"
   },
   "dependencies": {
     "clean-webpack-plugin": "^0.1.19",
@@ -23,6 +26,7 @@
     "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.11",
     "dotenv": "^5.0.1",
+    "dotenv-webpack": "^1.5.5",
     "eslint-loader": "^2.0.0",
     "file-loader": "^1.1.11",
     "fork-ts-checker-webpack-plugin": "^0.4.1",
